@@ -65,9 +65,9 @@ function AppRoutes() {
       <Route path="/patient/medical-history" element={
         <ProtectedRoute allowedRole="patient"><MedicalHistory /></ProtectedRoute>
       } />
-   {<Route path="/patient/chatbot" element={
+   <Route path="/patient/chatbot" element={
         <ProtectedRoute allowedRole="patient"><Chatbot /></ProtectedRoute>
-      } /> }   
+      } />  
 
       {/* ── Doctor routes ─────────────────────────────────── */}
       <Route path="/doctor" element={
